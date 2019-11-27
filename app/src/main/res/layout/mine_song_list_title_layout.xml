@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:divider="@drawable/base_e5e5e5_divider_for_horizontal"
+            android:dividerPadding="15dp"
+
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="@string/create_new_song_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title_created"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingRight="25dp"
+                android:layout_gravity="center_vertical|end"
+android:gravity="end"
+
+        />
+        <TextView
+                android:text="@string/collect_song_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_title_collected"
+                android:layout_gravity="center_vertical|start"
+                android:paddingLeft="25dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingBottom="4dp"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="7个歌单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/song_list_count"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                />
+        <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/plus"
+                android:id="@+id/add_song_list"
+                />
+        <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                app:srcCompat="@drawable/list_icn_mng"
+                android:id="@+id/manage_song_list"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/ll_create_new_song_list"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:srcCompat="@drawable/plus_40"
+                android:scaleType="centerInside"
+                />
+        <TextView
+                android:text="@string/create_new_song_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView7" />
+    </LinearLayout>
+    <TextView
+            android:text="@string/no_collected_song_list"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:id="@+id/no_collected_song_list"
+    android:visibility="gone"
+    />
+
+
+</LinearLayout>

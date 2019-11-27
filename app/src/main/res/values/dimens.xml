@@ -1,0 +1,39 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_base_left_right_padding">10dp</dimen>
+
+    <dimen name="classify_drawable_padding">5dp</dimen>
+    <dimen name="online_classify_text_size">14sp</dimen>
+    <dimen name="bottom_fragment_album_size">41dp</dimen>
+
+    <dimen name="statusbar_view_height">22dp</dimen>
+    <dimen name="tool_bar_height">42dp</dimen>
+
+    <dimen name="playing_song_info_item_margin">10dp</dimen>
+    <dimen name="playing_song_info_item_text_size">14sp</dimen>
+
+    <dimen name="content_image_head">60dp</dimen>
+    <dimen name="content_item_bottom_margin">3dp</dimen>
+
+    <dimen name="lrc_text_size">16sp</dimen>
+    <dimen name="lrc_time_text_size">12sp</dimen>
+    <dimen name="lrc_divider_height">16dp</dimen>
+    <dimen name="lrc_timeline_height">1dp</dimen>
+    <dimen name="lrc_drawable_width">30dp</dimen>
+    <dimen name="lrc_time_width">40dp</dimen>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+</resources>

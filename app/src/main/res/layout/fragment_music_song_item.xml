@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/music_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:maxLines="1"
+
+            android:layout_toStartOf="@+id/viewpager_list_button"
+    />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:gravity="center_vertical"
+
+            android:layout_below="@+id/music_name"
+            android:layout_toStartOf="@+id/viewpager_list_button"
+
+    >
+        <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/have_down" />
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/music_info" android:layout_weight="1"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/se_music_circle_point" />
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/album_info"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <ImageView
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/se_music_more_setting"
+            android:padding="15dp"
+            android:id="@+id/viewpager_list_button"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+
+
+    />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:background="@color/split_color" />
+
+</RelativeLayout>

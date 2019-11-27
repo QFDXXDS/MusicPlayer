@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xxds.musicplayer">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+
+    <application
+            android:name="com.xxds.ApplicationMain"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+
+        <activity
+                android:name=".modules.main.ui.Welcome"
+                android:label="@string/title_activity_weicome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+                android:name="com.google.android.wearable.standalone"
+                android:value="true"/>
+
+        <activity android:name=".modules.playing.ui.PlayingActivity">
+        </activity>
+
+        <provider
+                android:name=".modules.provider.SongListContentProvider"
+                android:authorities="com.xxds.musicprovider"
+                android:enabled="true"
+                android:exported="false">
+        </provider>
+
+        <activity android:name=".modules.main.ui.ToolBarActivity">
+        </activity>
+        <activity android:name=".modules.main.ui.CreateSongListActivity">
+        </activity>
+
+        <meta-data
+                android:name="com.google.android.actions"
+                android:resource="@xml/button_selector"/>
+
+        <activity android:name=".modules.main.ui.MainActivity">
+        </activity>
+
+        <service
+                android:name=".modules.service.MediaService"
+                android:enabled="true"
+                android:exported="false"
+                android:process=":remote">
+        </service>
+    </application>
+
+</manifest>

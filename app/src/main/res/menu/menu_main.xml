@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.xxds.musicplayer.MainActivity">
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          app:showAsAction="never">
+
+        <menu >
+            <item
+                    android:id="@+id/new_file"
+                    android:title="新建"/>
+
+            <item
+                    android:id="@+id/open_file"
+                    android:title="打开"/>
+
+            <item
+                    android:id="@+id/save_file"
+                    android:title="保存"/>
+
+            <item
+                    android:id="@+id/rename_file"
+                    android:title="重命名"/>
+        </menu>
+
+    </item>
+    <item android:id="@+id/action_deatil"
+          android:title="@string/app_name"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:background="@color/white"
+>
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp" tools:srcCompat="@tools:sample/avatars"
+            android:layout_gravity="top"
+            android:background="@drawable/bottom_fragment_divider"
+            android:id="@+id/imageView"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@color/white">
+
+
+        <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/play_bar_img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="6dp"
+
+        />
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/play_bar_img"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+        >
+            <TextView
+                    android:id="@+id/play_bar_song_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textColor="@color/light_black"
+                    android:textSize="14sp"
+                    tools:text="晴天" />
+
+            <TextView
+                    android:id="@+id/play_bar_singer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:ellipsize="end"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:textColor="@color/medium_sea_green"
+                    android:textSize="12sp"
+                    tools:text="周杰伦" />
+
+
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginRight="150dp"
+                  android:id="@+id/music_logan"
+                  android:gravity="center_vertical"
+                  android:paddingStart="30dp"
+                  android:text="@string/logan"
+                  android:textColor="@color/light_black"
+                  android:textSize="16sp"
+                  android:textStyle="italic"
+
+
+        />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true">
+            <ImageView
+                    android:id="@+id/play_list"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="14dp"
+                    android:src="@drawable/playbar_btn_playlist" />
+
+            <ImageView
+                    android:id="@+id/control"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="12dp"
+                    android:src="@drawable/playbar_btn_play" />
+
+            <ImageView
+                    android:id="@+id/play_next"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="16dp"
+                    android:src="@drawable/playbar_btn_next" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
